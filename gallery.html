@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery — Pablo Allegrini</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete gallery of landscape and nature photography by Pablo Allegrini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav" id="siteNav">
+  <a class="wordmark" href="index.html">Pablo Allegrini</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <nav class="links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.instagram.com/pp.allegrini/" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
+        <circle cx="12" cy="12" r="4.2"/>
+        <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+  </nav>
+</header>
+
+<div class="page-header">
+  <span class="hero-kicker mono">Full archive</span>
+  <h1>Gallery</h1>
+  <p>Every photograph, in the order they were taken — each with its own frame number.</p>
+</div>
+
+<section>
+  <div class="section-head">
+    <h2>Photographs</h2>
+    <span id="galeriaCount" class="mono"></span>
+  </div>
+  <div class="grid" id="galleryGrid"></div>
+</section>
+
+<footer>
+  <span class="mono">© 2026 PABLO ALLEGRINI</span>
+  <a href="https://www.instagram.com/pp.allegrini/" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="close" id="lbClose" aria-label="Fechar">&times;</button>
+  <button class="prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+  <div class="lb-stage" id="lbStage">
+    <img id="lbImg" src="" alt="">
+  </div>
+  <button class="next" id="lbNext" aria-label="Próxima">&#8250;</button>
+  <span class="lb-hint">click or scroll to zoom · drag to pan</span>
+  <span class="lb-frame" id="lbNum"></span>
+  <span class="lb-counter" id="lbCount"></span>
+</div>
+
+<script>
+  window.SITE_PHOTOS = [
+    "01","35","46","41","42","39","28","29","04","05",
+    "34","32","13","15","21","11","12","08","02","03",
+    "10","09","26","36","27","23","30","44","38","37",
+    "48","49","50","51","52","53","54","55","56","57",
+    "58","59","60","61","63","64","65","66","67","69",
+    "70","71","72","74","75","76","78","79","80","81"
+  ];
+</script>
+<script src="script.js"></script>
+</body>
+</html>
