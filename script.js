@@ -33,7 +33,6 @@
   gridEl.innerHTML = photos.map((photo, index) => `
     <div class="plate" data-index="${index}">
       <img src="${photo}.jpg" alt="Photograph ${photo}" loading="lazy" decoding="async">
-      <span class="frame-num">No. ${photo}</span>
     </div>
   `).join("");
 
